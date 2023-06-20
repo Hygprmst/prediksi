@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+gfrom flask import Flask, render_template, request
 from model import load, prediksi
 
 app = Flask(__name__)
@@ -25,4 +25,4 @@ def predict():
     return render_template('index.html', hasil_prediksi=prediction_result, nilai_kepercayaan=confidence)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug True)
