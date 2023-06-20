@@ -25,4 +25,4 @@ def predict():
     return render_template('index.html', hasil_prediksi=prediction_result, nilai_kepercayaan=confidence)
 
 if __name__ == "__main__":
-    app.run( debug=True)
+    app.run()
