@@ -1,4 +1,4 @@
-gfrom flask import Flask, render_template, request
+from flask import Flask, render_template, request
 from model import load, prediksi
 
 app = Flask(__name__)
