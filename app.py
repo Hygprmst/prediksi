@@ -10,7 +10,7 @@ load()
 def home():
     return render_template('index.html')
 
-@app.route("/predict", methods=["POST"])
+@app.route("/", methods=["POST"])
 def predict():
     # menangkap data yang diinput user melalui form
     lama_bekerja = int(request.form['lama_bekerja'])
